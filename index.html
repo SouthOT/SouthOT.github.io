@@ -1,18 +1,67 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Chase's Black Balls Hangout</title>
-  <meta name="description" content="Place for placing black balls.">
-  <meta name="author" content="Chase">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <p>Welcome to the BBNB Hangout</p>
+    <img src="assets/logo.png" class="logo" />
+    <h1 class="logo">
+        ~Chase~
+    </h1>
+    <h2 class="logo">Go to my socials, or check out my projects!</h2>
+    <h2 class="logoalt">You can also join my discord, which has updates on all my projects!</h2>
+
+    <div class="buttoncontainer">
+        <button class="discord fade-in-a slim" onclick="gotoDiscord()">Discord</button>
+        <button class="projects fade-in-b slim" onclick="gotoProjects()">Projects</button>
+    </div>
+
+    <div id="socials" class="socials">
+        <button class="social social1" onclick="gotoYoutube()"></button>
+        <button class="social social3" onclick="showDiscord()">
+            <p id="tag" class="discordTag">~Chase~#4471 - Copied!</p>
+        </button>
+        
+    </div>
+
+    <script>
+        const element = document.getElementById("tag");
+        element.style.animation = 'none';
+        element.offsetHeight;
+        element.style.animation = null;
+
+        window.setTimeout(function () {
+            const socials = document.getElementById("socials");
+            socials.style.animationPlayState = "running";
+        }, 2750);
+
+        function gotoDiscord() {
+            window.location.href = "https://discord.gg/pgXYvzjVZ6";
+        }
+        function gotoProjects() {
+            window.location.href = "projects.html";
+        }
+        function gotoYoutube() {
+            window.location.href = "https://www.youtube.com/channel/UCwXkDIV_sd_4yvAutnnevEw";
+        }
+        function showDiscord() {
+            const element = document.getElementById("tag");
+            element.style.animation = 'none';
+            element.offsetHeight;
+            element.style.animation = null;
+            element.style.animationPlayState = "running";
+
+            navigator.permissions.query({ name: "clipboard-write" }).then(cb => {
+                if (cb.state == "granted" || cb.state == "prompt")
+                    navigator.clipboard.writeText("~Chase~#4471").then(function () {}, function () {
+                        alert("Failed to copy to clipboard.")
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
