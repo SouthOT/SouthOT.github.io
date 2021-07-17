@@ -17,8 +17,8 @@
 
     <div class="buttoncontainer">
         <button class="discord fade-in-a slim" onclick="gotoDiscord()">Discord</button>
-        <button class="projects fade-in-a slim" onclick="gotoProjects()">Projects</button>'
-        <button class="servers fade-in-a slim" onclick"gotoServers()"Servers</button>'
+        <button class="projects fade-in-b slim" onclick="gotoProjects()">Projects</button>
+        <button class="servers fade-in-c slim" onclick"gotoServers()">Servers</button>
     </div>
 
     <div id="socials" class="socials">
@@ -51,6 +51,7 @@
         }
         function gotoServers() {
             window.location.href = "servers.html";
+        }
         function showDiscord() {
             const element = document.getElementById("tag");
             element.style.animation = 'none';
