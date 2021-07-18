@@ -115,6 +115,19 @@ button.social3 {
     animation-timing-function: ease-out;
     animation-play-state: running;
 }
+.fade-in-d {
+
+    animation-delay: 0;
+
+    animation-name: fadein_d;
+
+    animation-duration: 2.75s;
+
+    animation-timing-function: ease-out;
+
+    animation-play-state: running;
+
+}
 
 @keyframes fadein_a {
     0% {
@@ -140,7 +153,7 @@ button.social3 {
         opacity: 1;
     }
 }
-@keyframes fadein_c {
+@keyframes fadein_d {
     0% {
         opacity: 0;
     }
@@ -152,6 +165,27 @@ button.social3 {
     100% {
         opacity: 1;
     }
+}
+@keyframes fadein_c {
+
+    0% {
+
+        opacity: 0;
+
+    }
+
+    85% {
+
+        opacity: 0;
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+    }
+
 }
 @keyframes socialsopening {
     0% {
