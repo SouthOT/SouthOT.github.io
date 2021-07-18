@@ -56,7 +56,6 @@ div.socials {
     
     position: absolute;
     top: 3%;
-    left: 0%;
 
     animation: socialsopening 1s ease-out;
     animation-play-state: paused;
