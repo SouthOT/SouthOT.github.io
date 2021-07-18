@@ -85,33 +85,33 @@ p.discordTag {
     width: 256px;
 }
 button.social1 {
-    background-image: url("https://7ukecreat0r.github.io/assets/social-yt.png");
+    background-image: url("social-yt.png");
 }
 button.social2 {
-    background-image: url("https://7ukecreat0r.github.io/assets/social-twitter.png");
+    background-image: url("social-twitter.png");
 }
 button.social3 {
-    background-image: url("https://7ukecreat0r.github.io/assets/social-discord.png");
+    background-image: url("social-discord.png");
 }
 
 .fade-in-a {
     animation-delay: 0;
     animation-name: fadein_a;
-    animation-duration: 3.0s;
+    animation-duration: 2s;
     animation-timing-function: ease-out;
     animation-play-state:running;
 }
 .fade-in-b {
     animation-delay: 0;
     animation-name: fadein_b;
-    animation-duration: 3.5s;
+    animation-duration: 2.25s;
     animation-timing-function: ease-out;
     animation-play-state: running;
 }
 .fade-in-c {
     animation-delay: 0;
     animation-name: fadein_c;
-    animation-duration: 4.0s;
+    animation-duration: 2.5s;
     animation-timing-function: ease-out;
     animation-play-state: running;
 }
@@ -262,7 +262,7 @@ button {
         margin-left: 30px;
         margin-right: 30px;
         font-family: 'Roboto', sans-serif;
-        font-size: 150%;
+        font-size: 250%;
         font-weight: 100;
         background-color: transparent;
         border-radius: 15px;
