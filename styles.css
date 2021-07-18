@@ -54,8 +54,9 @@ div.socials {
     width: 100%;
     height: 32px;
     
-    position: relative;
+    position: absolute;
     top: 3%;
+    left: 50%;
 
     animation: socialsopening 1s ease-out;
     animation-play-state: paused;
