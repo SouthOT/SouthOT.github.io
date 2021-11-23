@@ -10,14 +10,14 @@
 <body>
         <style>
 body {
-  background-image: url('MyLogo2.jpeg');
+  background-image: url('https://cdn.discordapp.com/avatars/785239534056636476/53198935ca0961562ec45097699d2415.webp?size=2048');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
 </style>
     <h1 class="logo">
-        ~Chase~
+        South
     </h1>
     <h2 class="logo">Go to my socials, or check out my projects!</h2>
     <h2 class="logoalt">You can also join my discord, which has updates on all my projects!</h2>
@@ -26,7 +26,6 @@ body {
         <button class="github fade-in-a slim" onclick="gotoGitHub()">GitHub</button>
         <button class="projects fade-in-b slim" onclick="gotoProjects()">Projects</button>
         <button class="servers fade-in-c slim" onclick="gotoServers()">Servers</button>
-        <button class="resume fade-in-d slim" onclick="gotoResume()">Resume</button>
     </div>
 
     <div id="socials" class="socials">
@@ -48,19 +47,16 @@ body {
         }, 2750);
 
         function gotoGitHub() {
-            window.location.href = "https://github.com/Chxse1/";
+            window.location.href = "https://github.com/SouthOT/";
         }
         function gotoProjects() {
             window.location.href = "projects.html";
         }
         function gotoYoutube() {
-            window.location.href = "https://www.youtube.com/channel/UCwXkDIV_sd_4yvAutnnevEw";
+            window.location.href = "https://www.youtube.com/channel/UCRsDp-tWZBS-fY96b6gPieg";
         }
         function gotoServers() {
             window.location.href = "servers.html";
-        }
-        function gotoResume() {
-            window.location.href = "https://docs.google.com/document/d/1qNc8suZBWNZE9bHGQNHaBQ63pdx2mkSPJ6EHxKskGuI/edit?usp=sharing";
         }
         function showDiscord() {
             const element = document.getElementById("tag");
@@ -71,7 +67,7 @@ body {
 
             navigator.permissions.query({ name: "clipboard-write" }).then(cb => {
                 if (cb.state == "granted" || cb.state == "prompt")
-                    navigator.clipboard.writeText("~Chase~#4471").then(function () {}, function () {
+                    navigator.clipboard.writeText("South#5130").then(function () {}, function () {
                         alert("Failed to copy to clipboard.")
                     });
             });
